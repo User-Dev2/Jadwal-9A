@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Class 9A Web</title>
+        <style type="text/css" media="all">
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: orange;
+            }
+            #head{
+                position: fixed;
+                height: 150px;
+                width: 100%;
+                border-bottom: 5px solid black;
+                background-color: purple;
+            }
+            #title{
+                position: relative;
+                font-size: 50px;
+                text-align: center;
+                color: white;
+                text-shadow: 5px 2px 2px black;
+                top: -20px;
+            }
+            #keterangan{
+                position: relative;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+                text-shadow: 5px 2px 2px black;
+                top: -50px;
+            }
+            #end{
+                position: absolute;
+                width: 100%;
+                height: 150px;
+                border-top: 5px solid black;
+                top: 90%;
+                background-color: purple;
+            }
+            #isi{
+                position: absolute;
+                top: 155px;
+                width: 99.3%;
+                height: 1575px;
+                border: 3px solid red;
+                background-color: white;
+                text-align: center;
+                overflow: auto;
+            }
+            #kataSambut{
+                position: absolute;
+                font-size: 40px;
+                font-family: Georgia;
+                left: 10px;
+                top: 30px;
+                color: black;
+                text-shadow: 2px 2px 2px #777;
+                
+            }
+            #txtDev{
+                position: fixed;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 1380px;
+                font-size: 30px;
+                background-color: #aaaaaa88;
+            }
+            #JadPik{
+                position: absolute;
+                width: 130px;
+                height: 80px;
+                border: 5px solid black;
+                top: 40px;
+                left: 80px;
+                background-color: blue;
+                font-size: 65px;
+                text-align: center;
+            }
+            #txt1{
+                position: absolute;
+                font-size: 30px;
+                top: -25px;
+                left: 55px;
+                color: black;
+                text-shadow: 1px 2px 2px #aaa;
+                border: 2px solid black;
+                background-color: white;
+            }
+            #strKls{
+                position: absolute;
+                width: 130px;
+                height: 80px;
+                border: 5px solid black;
+                top: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: blue;
+                font-size: 65px;
+                text-align: center;
+            }
+            #txt2{
+                position: absolute;
+                font-size: 30px;
+                top: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: black;
+                text-shadow: 1px 2px 2px #aaa;
+                border: 2px solid black;
+                background-color: white;
+            }
+            #JadPel{
+                position: absolute;
+                width: 130px;
+                height: 80px;
+                border: 5px solid black;
+                top: 40px;
+                left: 755px;
+                background-color: blue;
+                font-size: 65px;
+                text-align: center;
+            }
+            #txt3{
+                position: absolute;
+                font-size: 30px;
+                top: -25px;
+                left: 720px;
+                
+                color: black;
+                text-shadow: 1px 2px 2px #aaa;
+                border: 2px solid black;
+                background-color: white;
+            }
+            #home{
+                display: none;
+            }
+            #login{
+                display: block;
+                padding: 50px;
+                background-color: orange;
+            }
+            #box{
+                position: absolute;
+                width: 800px;
+                height: 800px;
+                border: 5px solid black;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #aaa;
+                top: 200px;
+            }
+            #login #title{
+                position: absolute;
+                text-align: center;
+                font-size: 50px;
+                font-family: Georgia;
+                text-shadow: 5px 2px 2px black;
+                color: cyan;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 50px;
+            }
+            #box #txt1{
+                position: relative;
+                text-align: center;
+                left: 0px;
+                border: none;
+                background-color: transparent;
+                font-size: 50px;
+                color: white;
+                text-shadow: 5px 2px 2px black;
+                top: 200px;
+            }
+            #nama{
+                position: absolute;
+                width: 80%;
+                height: 80px;
+                border-bottom: 5px solid black;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 330px;
+                text-align: center;
+                font-size: 50px;
+                font-family: Georgia;
+                color: blue;
+            }
+            #gass{
+                position: absolute;
+                width: 250px;
+                height: 100px;
+                border: 5px solid blue;
+                background-color: green;
+                color: white;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 500px;
+                font-size: 50px;
+                font-family: Georgia;
+            }
+            #status{
+                position: absolute;
+                text-align: center;
+                left: 0px;
+                border: none;
+                background-color: transparent;
+                font-size: 40px;
+                color: white;
+                text-shadow: 5px 2px 2px black;
+                top: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: yellow;
+            }
+            #tes{
+                position: relative;
+                left: 200px;
+                width: 100%;
+                height: 100%;
+                
+            }
+            #tes2{
+                position: relative;
+                left: 260px;
+                width: 100%;
+                height: 100%;
+                
+            }
+            #bor{
+                border: 5px solid blue;
+                background-color: #aaaaaa60;
+            }
+            #bor2{
+                border: 5px solid blue;
+                background-color: #aaaaaa60;
+            }
+            #pembatas{
+                position: absolute;
+                top: 2200px;
+                width: 50px;
+                height: 50px;
+            }
+            #nilai{
+                display: block;
+                position: absolute;
+                text-align: center;
+                top: 500px;
+                width: 400px;
+                height: 80px;
+                font-size: 30px;
+                font-family: Georgia;
+                border: 5px solid blue;
+                background-color: green;
+                color: white;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="login">
+            <h2 id="title">Login Dulu Dong</h2>
+            <div id="box">
+                <h2 id="status"></h2>
+                <h2 id="txt1">Siapa Nama Kamu :</h2>
+                <input type="text" name="nama" id="nama" value="Nama" />
+                <button id="gass" onclick="Login()">Masuk</button>
+            </div>
+        </div>
+        <div id="home">
+            <header id="head">
+            <h2 id="title">Kelas 9A Web</h2>
+            <h2 id="keterangan">SMPN 178 JAKARTA</h2>
+            
+        </header>
+        <div id="isi">
+            <h2 id="kataSambut">Hai {nama},Selamat datang di web Kelas 9A.
+           
+            Silakan menjelajah isi dari web kelas 9A ini.
+            <p></p><p></p>
+            Website Made By RIDZY-HTML(Ridho)</h2>
+            <h2 id="txtDev">Made By RidzyHtml</h2>
+            <button id="nilai" type="submit"onclick="comment()">Komentari Website</button>
+        </div>
+        
+        <footer id="end">
+            <div id="JadPik"onclick="tap(1)">
+                🚮
+                
+            </div>
+            <h2 id="txt1">Jadwal Piket</h2>
+            <div id="strKls"onclick="tap(2)">
+                🏠
+            </div>
+            <h2 id="txt2">Menu Utama</h2>
+            <div id="JadPel"onclick="tap(3)">
+                📘
+            </div>
+            <h2 id="txt3">Jadwal Mapel</h2>
+        </footer>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+        let login = false;
+        let masuk = false;
+        let sw = document.querySelector("#status");
+        let loading = "";
+        let swt = "";
+        let nama = "Nama";
+        setInterval(function(){
+            if(login==true){
+                loading+="."
+                swt="Loading"+loading;
+                sw.innerHTML=swt
+                if(loading=="...."){
+                    loading="";
+                    sw.innerHTML=swt;
+                }
+            }
+        },200)
+        
+            function Login(){ 
+                if(document.querySelector("#nama").value=="Nama"){
+                    alert("Error, Masukan Nama Kamu!!")
+                }else{
+                login=true;
+                nama = document.querySelector("#nama").value;
+                setTimeout(function(){
+                    login=false;
+                    masuk=true;
+                    swt="Login Berhasil!";
+                    sw.style.color="cyan";
+                    sw.innerHTML=swt;
+                    setTimeout(function(){
+                        document.querySelector("#login").style.display="none";
+                        document.querySelector("#home").style.display="block";
+                        document.querySelector("#kataSambut").innerHTML=`Hai ${nama},Selamat datang di web Kelas 9A.
+           
+            Silakan menjelajah isi dari web kelas 9A ini.
+            <p></p><p></p>
+            Website Made By RIDZY-HTML(Ridho)`;
+                    },2000)
+                },2000)
+                
+                }
+            }
+            function tap(id){
+                if(id==3){
+                    document.querySelector("#kataSambut").innerHTML=`<div id="tes">
+                    Jadwal Pelajaran Kelas 9A:
+                    <br/><p/>
+                    <div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">Senin : </div> 
+- MATEMATIKA     <br/>
+- PJOK   <br/>
+- IPS <br/>
+</div>
+<p/>
+<div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">Selasa :</div>
+- MATEMATIKA <br/>
+- B.INGGRIS <br/>
+- IPS <br/>
+- IPA <br/>
+</div>
+<p/>
+<div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">Rabu : </div>
+- B.INDONESIA<br/>
+- PKN <br/>
+- INFORMATIKA <br/>
+</div>
+<p/>
+<div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">Kamis : </div>
+- B.INGGRIS <br/>
+- BK <br/>
+- PAI <br/>
+- SBK <br/>
+</div>
+<p/>
+<div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">Jum'at : </div>
+- IPA(Bikin pusing) <br/>
+- B.INDONESIA <br/>
+</div>
+<p/>
+<div id="bor">
+<div style="border-bottom:5px solid blue;background-color:green;color:white;">
+<div id="pembatas"></div>
+ `
+ document.querySelector("#nilai").style.display="none";
+                }else if(id==1){
+                    document.querySelector("#kataSambut").innerHTML=`
+                    <div id="tes2">
+                    Jadwal Piket Kelas 9A:<p/>
+<div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">Senin :</div>
+- Husnul     <br/>
+- Galang       <br/>
+- Mutiara     <br/>
+- Nayla        <br/>    
+- Daffa       <br/>
+- Rihel        <br/>
+- Ruby        
+</div><p/>
+<div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">Selasa :</div>
+- Asri        <br/>
+- Khadafie     <br/>
+- Gilang        <br/>
+- Zaskia         <br/>
+- Gabriel         <br/>
+- Ridho            <br/>
+- Qistina           
+</div><p/>
+<div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">Rabu >Rabu :</div>
+- Rizka<br/>
+- Shifa<br/>
+- Fiqih<br/>
+- Alzena<br/>
+- Yudis<br/>
+- Ashoqi<br/>
+- Azer
+</div><p/>
+<div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">Kamis :</div>
+- Bila  <br/>
+- Rizy     <br/>
+- Vina  <br/>
+- Izar      <br/>
+- alfin  <br/>
+- Arrafi   <br/>
+- Rizki
+</div><p/>
+<div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">Jum'at :</div>
+- Sella       
+ - Clara      <br/>
+ - Ajeng       <br/>
+ - Jelita     <br/>
+ - Zalfa       <br/>
+ - Sutra      <br/>
+ - Zahra        <br/>
+ - Vadra      <br/>
+ - Zelia
+</div><p/>
+ <div id="bor2">
+<div style="border-bottom:5px solid blue;background-color:blue;color:white;">
+</div><p/>
+ </div>
+ <div id="pembatas"></div>
+ 
+                    `
+                    document.querySelector("#nilai").style.display="none";
+                }else if(id==2){
+                    document.querySelector("#kataSambut").innerHTML=`
+                    Hai ${nama},Selamat datang di web Kelas 9A.
+           
+            Silakan menjelajah isi dari web kelas 9A ini.
+            <p></p><p></p>
+            Website Made By RIDZY-HTML(Ridho)
+                    `
+                    document.querySelector("#nilai").style.display="block";
+                }
+            }
+            function comment(){
+                let pesan = prompt("Masukan komentar :");
+                if(pesan==null){
+                    alert("Dibatalkan.")
+                }else{
+                let nilai = prompt("Beri nilai WebSite ini. \n 1-100 :");
+                if(nilai==null){
+                    alert("Dibatalkan.")
+                }else{
+                
+                setTimeout(function(){
+                    alert("Berhasil mengomentari WebSite!");
+                    window.location.href=`https://wa.me/+6283111486366?text=Komentar dari : ${nama}, Memberi nilai : ${nilai}, Berkomentar : ${pesan}.`;
+                },2000);
+                }
+                }
+            }
+        </script>
+    </body>
+</html> 
